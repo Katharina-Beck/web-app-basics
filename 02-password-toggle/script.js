@@ -12,5 +12,3 @@ toggleButton.addEventListener("click", function () {
     toggleButton.innerText = "Show Password";
   }
 });
-
-//es muss sich noch der Text verändern (if Methode anwenden?)
