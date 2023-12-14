@@ -1,12 +1,16 @@
-const showButton = document.getElementById("#show-button");
-const password = document.getElementById("#password");
+const toggleButton = document.querySelector("#toggle-button");
+const password = document.querySelector("#password");
 
-showButton.addEventListener("click", function () {
+toggleButton.addEventListener("click", function () {
+  const type =
+    password.getAttribute("type") === "password" ? "text" : "password";
+  password.setAttribute("type", type);
+
   if (password.type === "password") {
-    password.type = "text";
-    showButton.innerText = "Hide Password";
+    toggleButton.innerText = "Hide Password";
   } else {
-    password.type = "password";
-    showButton.innerText = "Show Password";
+    toggleButton.innerText = "Show Password";
   }
 });
+
+//es muss sich noch der Text verändern (if Methode anwenden?)
