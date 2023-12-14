@@ -7,8 +7,8 @@ toggleButton.addEventListener("click", function () {
   password.setAttribute("type", type);
 
   if (password.type === "password") {
-    toggleButton.innerText = "Hide Password";
-  } else {
     toggleButton.innerText = "Show Password";
+  } else {
+    toggleButton.innerText = "Hide Password";
   }
 });
