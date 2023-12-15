@@ -18,7 +18,7 @@ setInterval(() => {
   // schneidet Uhrzeit aus Datumstring in 8 Zeichen
   // 19:13:49 GMT+0100 (Mitteleuropäische Normalzeit)
   t = d.toTimeString().slice(0, 8);
-  // wenn sec durch 2 teilbar normal anzeigen
+  // wenn sec durch 2 teilbar : anzeigen
   if (sec % 2 == 0) digital.innerHTML = t;
   // ansonsten : durch leerzeichen ersetzen
   else digital.innerHTML = t.replaceAll(":", " ");
