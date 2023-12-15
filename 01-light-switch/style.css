@@ -1,10 +1,6 @@
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::before,
-**::after {
+*::after {
   box-sizing: inherit;
 }
 html,
@@ -21,25 +17,22 @@ body {
 
 .body {
   transition: 1s ease-in-out background-color;
+  background-color: snow;
 }
 
-.body--dark {
-  background-color: #333;
-}
-
-.button {
+button {
   font-size: 2rem;
   cursor: pointer;
-  font-family: momospace;
+  font-family: monospace;
   border: 5px solid #333;
+  border-radius: 2px;
+  text-align: center;
   padding: 0.5rem 1rem;
   background-color: snow;
-  border-radius: 2px;
   color: #333;
 }
 
-.button-dark {
-  border: 5px solid snow;
+.dark {
   background-color: #333;
   color: snow;
   box-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow;
