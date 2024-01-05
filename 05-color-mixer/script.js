@@ -9,14 +9,3 @@ function updateColor() {
   output.style.backgroundColor = color;
   colorCode.innerText = color;
 }
-
-colorCode.addEventListener("click", function () {
-  navigator.clipboard
-    .writeText(colorCode.innerText)
-    .then(() => {
-      alert("add to clipboard");
-    })
-    .catch(() => {
-      alert("something went worng");
-    });
-});
